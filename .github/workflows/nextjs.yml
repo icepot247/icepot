@@ -1,0 +1,50 @@
+name: Deploy site
+
+push:
+  branches: [ "main" ]
+
+jobs:
+  cd:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ ubuntu-latest ]
+        node: [ 20 ]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+
+      - name: Setup node env
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          cache: ${{ steps.detect-package-manager.outputs.manager }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate
+        run: npm run generate
+
+#      - name: Deploy
+#        uses: peaceiris/actions-gh-pages@v3
+#        with:
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+#          publish_dir: ./dist
+
+      - name: copy
+          env:
+            SRC_FOLDER_PATH: 'frontend/.output'
+            TARGET_BRANCH: 'build-site'
+          run: |
+            files=$(find $SRC_FOLDER_PATH -type f) # get the file list
+            git config --global user.name 'GitHub Action'
+            git config --global user.email 'action@github.com'
+            git fetch                         # fetch branches
+            git checkout $TARGET_BRANCH       # checkout to your branch
+            git checkout ${GITHUB_REF##*/} -- $files # copy files from the source branch
+            git add -A
+            git diff-index --quiet HEAD ||  git commit -am "deploy files"  # commit to the repository (ignore if no modification)
+            git push origin $TARGET_BRANCH # push to remote branch

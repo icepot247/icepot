@@ -1,7 +1,6 @@
-name: Deploy site
+name: cd
 
-push:
-  branches: [ "main" ]
+on: [push]
 
 jobs:
   cd:
@@ -9,18 +8,17 @@ jobs:
 
     strategy:
       matrix:
-        os: [ ubuntu-latest ]
-        node: [ 20 ]
+        os: [ubuntu-latest]
+        node: [20]
 
     steps:
       - name: Checkout
-        uses: actions/checkout@main
+        uses: actions/checkout@master
 
       - name: Setup node env
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2.1.2
         with:
           node-version: ${{ matrix.node }}
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
 
       - name: Install dependencies
         run: npm install
@@ -28,8 +26,8 @@ jobs:
       - name: Generate
         run: npm run generate
 
-            git checkout build-site     # checkout to your branch
-            git checkout ${GITHUB_REF##*/} -- $files # copy files from the source branch
-            git add -A
-            git diff-index --quiet HEAD ||  git commit -am "deploy files"  # commit to the repository (ignore if no modification)
-            git push origin frontend/.output # push to remote branch
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist

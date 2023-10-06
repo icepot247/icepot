@@ -38,8 +38,8 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source_folder: '.output/public'
-          destination_repo: 'icepot/tree/build-site'
-          destination_folder: ''
+          destination_repo: 'icepot247/icepot/tree/build-site'
+          destination_folder: 'test'
           user_email: 'deploy@email.com'
           user_name: 'icepot247'
           commit_msg: '[GHA] Update the test files.'

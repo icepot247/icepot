@@ -7,8 +7,6 @@ jobs:
     runs-on: ${{ matrix.os }}
     env:
       working-directory: ./frontend
-      SRC_FOLDER_PATH: '/.output/public'
-      TARGET_BRANCH: 'build-site'
 
     defaults:
       run:

@@ -1,38 +1,39 @@
-name: Deploy site
-
-push:
-  branches: [ "main" ]
-
+name: Deploy to GitHub pages
+on:
+  push:
+    branches: [nuxt]
+env:
+  BUILD_FOLDER: .output/public # or .output/public/yourrepositoryname/
 jobs:
-  cd:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [ ubuntu-latest ]
-        node: [ 20 ]
-
+  build:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@main
-
-      - name: Setup node env
+        uses: actions/checkout@v3
+      - name: Generate static Nuxt 3 files
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node }}
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
+          node-version: "16"
+          cache: 'yarn'
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Generate
-        run: npm run generate
-
+      - run: |
+          yarn install
+          yarn generate
+#      - name: Init new repo in $BUILD_FOLDER and commit generated files
+#        run: |
+#          grep -rnwl "<link rel=\"prefetch\"" $BUILD_FOLDER | xargs sed -i 's$<link rel="prefetch" href="[^"]*\.\(jpg\|png\|webm\|jpeg\|ttg\|svg\|gif\)">$$g'
+#          cd $BUILD_FOLDER
+#          touch .nojekyll
+#          git init
+#          git add -A
+#          git config --local user.email "action@github.com"
+#          git config --local user.name "GitHub Action"
+#          git commit -m 'deploy'
 #      - name: Deploy
-#        uses: peaceiris/actions-gh-pages@v3
+#        uses: JamesIves/github-pages-deploy-action@v4
 #        with:
-#          github_token: ${{ secrets.GITHUB_TOKEN }}
-#          publish_dir: ./dist
+#          folder: ${{env.BUILD_FOLDER}}
+
 
       - name: copy
           env:

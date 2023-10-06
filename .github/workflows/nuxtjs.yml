@@ -32,3 +32,14 @@ jobs:
       - name: Generate
         run: npm run generate
 
+      - name: Pushes folder
+          uses: datalbry/copy_folder_to_another_repo_action@1.0.0
+          env:
+            API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+          with:
+            source_folder: '.output/public'
+            destination_repo: 'icepot/tree/build-site'
+            destination_folder: ''
+            user_email: 'deploy@email.com'
+            user_name: 'icepot247'
+            commit_msg: '[GHA] Update the test files.'

@@ -28,23 +28,13 @@ jobs:
       - name: Generate
         run: npm run generate
 
-#      - name: Deploy
-#        uses: peaceiris/actions-gh-pages@v3
-#        with:
-#          github_token: ${{ secrets.GITHUB_TOKEN }}
-#          publish_dir: ./dist
-
       - name: copy
-          env:
-            SRC_FOLDER_PATH: 'frontend/.output'
-            TARGET_BRANCH: 'build-site'
-          run: |
-            files=$(find $SRC_FOLDER_PATH -type f) # get the file list
+          run: files=$(find 'frontend/.output' -type f) # get the file list
             git config --global user.name 'GitHub Action'
             git config --global user.email 'action@github.com'
             git fetch                         # fetch branches
-            git checkout $TARGET_BRANCH       # checkout to your branch
+            git checkout build-site     # checkout to your branch
             git checkout ${GITHUB_REF##*/} -- $files # copy files from the source branch
             git add -A
             git diff-index --quiet HEAD ||  git commit -am "deploy files"  # commit to the repository (ignore if no modification)
-            git push origin $TARGET_BRANCH # push to remote branch
+            git push origin frontend/.output # push to remote branch

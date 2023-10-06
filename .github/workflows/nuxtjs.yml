@@ -32,8 +32,3 @@ jobs:
       - name: Generate
         run: npm run generate
 
-      - name: Deploy
-        uses: icepot247/build-site
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./.output/public

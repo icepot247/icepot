@@ -17,6 +17,7 @@ jobs:
           cache: 'yarn'
 
       - run: |
+          cd frontend
           yarn install
           yarn generate
       - name: Init new repo in $BUILD_FOLDER and commit generated files

@@ -32,14 +32,14 @@ jobs:
       - name: Generate
         run: npm run generate
 
-      - name: Pushes folder
-        uses: datalbry/copy_folder_to_another_repo_action@1.0.0
+
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source_folder: '.output/public'
-          destination_repo: 'build-site'
-          destination_folder: 'test'
-          user_email: 'deploy@email.com'
-          user_name: 'icepot247'
-          commit_msg: '[GHA] Update the test files.'
+          source-directory: '.output/public'
+          destination-github-username: 'icepot247'
+          destination-repository-name: 'icepot-site'
+          user-email: icepot247@gmail.com
+          target-branch: main

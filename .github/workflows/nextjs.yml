@@ -4,12 +4,12 @@ on: [push]
 
 jobs:
   cd:
-    runs-on: ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}/frontend
 
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [16]
+        node: [19]
 
     steps:
       - name: Checkout
@@ -21,7 +21,7 @@ jobs:
           node-version: ${{ matrix.node }}
 
       - name: Go to directory
-        run: cd frontend
+        run: pwd
         
       - name: Install dependencies 
         run: npm install

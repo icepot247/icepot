@@ -28,11 +28,6 @@ jobs:
       - name: Generate
         run: npm run generate
 
-      - name: copy
-          run: files=$(find 'frontend/.output' -type f) # get the file list
-            git config --global user.name 'GitHub Action'
-            git config --global user.email 'action@github.com'
-            git fetch                         # fetch branches
             git checkout build-site     # checkout to your branch
             git checkout ${GITHUB_REF##*/} -- $files # copy files from the source branch
             git add -A

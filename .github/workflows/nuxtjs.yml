@@ -5,6 +5,12 @@ on: [push, pull_request]
 jobs:
   cd:
     runs-on: ${{ matrix.os }}
+    env:
+      working-directory: ./frontend
+
+    defaults:
+      run:
+        working-directory: ${{ env.working-directory }}
 
     strategy:
       matrix:
@@ -19,9 +25,6 @@ jobs:
         uses: actions/setup-node@v2.1.2
         with:
           node-version: ${{ matrix.node }}
-
-      - name: frontend dir
-        run: cd /home/runner/work/icepot/icepot/frontend &  npm install
 
       - name: Install dependencies
         run: npm install

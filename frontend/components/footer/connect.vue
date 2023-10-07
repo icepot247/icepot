@@ -9,7 +9,7 @@
     </p>
 
     <a
-      href="mailto: alasadnurriyad4@gmail.com"
+      href="mailto: contact@icepot.xyz"
       class="block text-center w-full bg-sky-700 p-2 rounded-lg text-[#F1F2F4]  mt-3 text-sm"
     >
       Sent Mail

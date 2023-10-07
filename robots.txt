@@ -2,5 +2,5 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://icepot.xyz/sitemap.xml
+Sitemap: http://localhost/sitemap.xml
 # END nuxt-simple-robots

@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   generate:{
     nojekyll: true, //not working on this version
   },
-  ssr: false, //server side rendered enabled //When true
+  ssr: true, //server side rendered enabled //When true
   target: "static", // and static, nuxt generates a hybrid static site
   app: {
     baseURL: "https://icepot247.github.io/icepot",
@@ -35,6 +35,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
+      failOnError: false,
       crawlLinks: true,
       routes: [
         '/',

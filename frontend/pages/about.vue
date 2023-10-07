@@ -49,7 +49,7 @@ defineOgImage()
           </div>
           <div class="sm:hidden block col-span-3 pb-5">
             <NuxtImg
-              src="/riyad.jpg"
+              src="/icePot.jpg"
               width="125"
               height="115"
               quality="50"
@@ -65,7 +65,7 @@ defineOgImage()
       </div>
       <div class="hidden sm:block col-span-3">
         <NuxtImg
-          src="/riyad.jpg"
+          src="/icePot.jpg"
           width="450"
           height="500"
           quality="50"

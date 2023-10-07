@@ -32,11 +32,12 @@ jobs:
       - name: Generate
         run: npm run generate
 
-      - name: Perform Checkout
-        uses: actions/checkout@v2
-        - name: Deploy
-          uses: peaceiris/actions-gh-pages@v3
-          with:
-            github_token: ${{ secrets.API_TOKEN_GITHUB }}
-            publish_dir: ./.output
-            publish_branch: master
+
+      - name: Pushes to another repository
+        uses: peaceiris/actions-gh-pages@v3
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./.output/public
+          publish_branch: master

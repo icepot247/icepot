@@ -33,13 +33,23 @@ jobs:
         run: npm run generate
 
 
-      - name: Pushes to another repository
-        uses: cpina/github-action-push-to-another-repository@main
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-        with:
-          source-directory: '.output/public'
-          destination-github-username: 'icepot247'
-          destination-repository-name: 'icepot-site'
-          user-email: icepot247@gmail.com
-          target-branch: main
+#      - name: Pushes to another repository
+#        uses: cpina/github-action-push-to-another-repository@main
+#        env:
+#          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+#        with:
+#          source-directory: '.output/public'
+#          destination-github-username: 'icepot247'
+#          destination-repository-name: 'icepot-site'
+#          user-email: icepot247@gmail.com
+#          target-branch: main
+
+
+      - name: Perform Checkout
+        uses: actions/checkout@v2
+        - name: Deploy
+          uses: peaceiris/actions-gh-pages@v3
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./.output/public
+            publish_branch: master

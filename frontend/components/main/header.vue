@@ -25,11 +25,11 @@ function onClick(val: string) {
             Blogs
           </NuxtLink>
         </li>
-        <li>
+<!--        <li>
           <NuxtLink to="/products" :class="{ underline: path === 'products' }">
             Products
           </NuxtLink>
-        </li>
+        </li>-->
         <li>
           <NuxtLink to="/categories" :class="{ underline: path === 'categories' }">
             Categories

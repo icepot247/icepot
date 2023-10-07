@@ -35,11 +35,11 @@ function onClick(val: string) {
             Categories
           </NuxtLink>
         </li>
-        <li title="About Me" :class="{ underline: path === 'about' }">
+<!--        <li title="About Me" :class="{ underline: path === 'about' }">
           <NuxtLink to="/about" aria-label="About me">
             About
           </NuxtLink>
-        </li>
+        </li>-->
         <li>
           <ClientOnly>
             <button

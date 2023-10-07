@@ -39,5 +39,5 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./.output/public
-          publish_branch: master
+          publish_dir: ./.output
+          publish_branch: build-site

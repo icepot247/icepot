@@ -1,0 +1,6 @@
+# START nuxt-simple-robots (indexable)
+User-agent: *
+Disallow: 
+
+Sitemap: http://icepot.xyz/sitemap.xml
+# END nuxt-simple-robots

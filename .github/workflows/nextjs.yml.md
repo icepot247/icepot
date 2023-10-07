@@ -49,3 +49,16 @@ jobs:
             git add -A
             git diff-index --quiet HEAD ||  git commit -am "deploy files"  # commit to the repository (ignore if no modification)
             git push origin $TARGET_BRANCH # push to remote branch
+
+
+
+#      - name: Pushes to another repository
+#        uses: cpina/github-action-push-to-another-repository@main
+#        env:
+#          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+#        with:
+#          source-directory: '.output/public'
+#          destination-github-username: 'icepot247'
+#          destination-repository-name: 'icepot-site'
+#          user-email: icepot247@gmail.com
+#          target-branch: main

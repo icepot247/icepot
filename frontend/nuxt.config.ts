@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   ssr: true, //server side rendered enabled //When true
   target: "static", // and static, nuxt generates a hybrid static site
   app: {
-    baseURL: "https://icepot247.github.io/icepot",
+    baseURL: "/icepot/",
     head: {
       charset: 'utf-16',
       viewport: 'width=device-width,initial-scale=1',

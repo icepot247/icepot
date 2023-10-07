@@ -32,8 +32,10 @@ jobs:
       - name: Generate
         run: npm run generate
 
-      - name: Push static
+      - name: Build copy push
         uses: peaceiris/actions-gh-pages@v3
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./frontend/.output/public

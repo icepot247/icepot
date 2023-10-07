@@ -22,7 +22,7 @@ export default defineNuxtConfig({
     strictNuxtContentPaths: true,
   },
   site: {
-    url: 'http://icepot.xyz',
+    url: '',
     identity: {
       type: 'Person',
     },

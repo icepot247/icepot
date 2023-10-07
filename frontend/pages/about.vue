@@ -9,7 +9,7 @@ defineOgImage()
         <div class="flex justify-between">
           <div>
             <h1 class="text-xl sm:text-4xl  pb-2 font-bold ">
-              Al Asad Nur Riyad
+              icePot
             </h1>
 
             <div class="my-3 space-x-3 pb-10">

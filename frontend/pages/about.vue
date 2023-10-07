@@ -14,7 +14,7 @@ defineOgImage()
 
             <div class="my-3 space-x-3 pb-10">
               <NuxtLink
-                to="https://github.com/nurRiyad"
+                to="https://github.com/"
                 target="_blank"
                 class="p-2 bg-gray-300 text-gray-800 rounded-md"
                 aria-label="Github"

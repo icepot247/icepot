@@ -32,6 +32,9 @@ jobs:
       - name: Generate
         run: npm run generate
 
+      - name: Copy CNAME
+          run: cp ./frontend/domain/CNAME ./frontend/.output/public
+
       - name: Push static
         uses: peaceiris/actions-gh-pages@v3
         with:

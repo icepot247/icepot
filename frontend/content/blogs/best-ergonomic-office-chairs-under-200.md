@@ -14,20 +14,6 @@ A lot of people spend tremendous hours daily sitting across their desks, this ha
 
 Read through this piece to understand what you need to build a healthy office space convenient enough for you to perform your day-to-day text acts operations without costing a fortune.
 
-ok
- ![image description](blogs-img/Ergonomic-Chair-In-Your-Workspace.jpg)
-
-  <NuxtImg
-              src="/blogs-img/Ergonomic-Chair-In-Your-Workspace.jpg"
-              width="125"
-              height="115"
-              quality="50"
-              class="rounded-md"
-            />
-
-ok
-### test
-
 
 ### What You Must Consider While Shopping for An Ergonomic Office Chair
 
@@ -45,13 +31,6 @@ Ergonomic adjustments are the foundation of most ergonomic chairs, which is why 
  
  ![image description](/blogs-img/Ergonomic-Chair-In-Your-Workspace.jpg)
 
- <NuxtImg
-              src="/blogs-img/Ergonomic-Chair-In-Your-Workspace.jpg"
-              width="125"
-              height="115"
-              quality="50"
-              class="rounded-md"
-            />
 
 Ergonomic chairs serve as posture supports, they have the correct back height which ensures your posture is fully supported, they also help reduce the pressure on your hips, as the hips mostly bear the brunt when it comes to holding down the weight in your body. Ergonomic chairs are specifically designed to improve your body alignment and reduce the stress and tension in your body.
 
@@ -72,13 +51,7 @@ Here is our list of carefully arranged ergonomic office chairs for your workspac
 
 - Hbada Task Desk Chair
 
- <NuxtImg
-              src="/blogs-img/Hbada-Task-Desk-Chair.jpg"
-              width="125"
-              height="115"
-              quality="50"
-              class="rounded-md"
-            />
+![image description](/blogs-img/Hbada-Task-Desk-Chair.jpg)
 Source: hbada.com
 
 The Hbada Task Desk Chair is premium and affordable, it is perfectly adequate if you’re looking for something to furnish your office within the range of $100 to $200, and it has similar features that other high-end and ergonomic office chairs have. With an adjustable height from 40 inches – 44 inches, it can recline to as much as 55 degrees which is considered to be the best for the posture of the spine. It has a beautiful mesh fabric to help reduce back pain in the lower back and adjustable arms to save space and a weight capacity of 250 pounds. It is highly recommended if you’re looking to work from home. The Hbada Task Desk Chair has a retail price of $169.

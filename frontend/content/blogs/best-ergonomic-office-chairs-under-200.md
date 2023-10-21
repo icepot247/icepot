@@ -28,6 +28,7 @@ Ergonomic adjustments are the foundation of most ergonomic chairs, which is why 
 
 ### What Are The Benefits Of Having An Ergonomic Chair In Your Workspace?
  
+ ![image description](/blogs-img/Ergonomic-Chair-In-Your-Workspace.jpg)
 
  <NuxtImg
               src="/blogs-img/Ergonomic-Chair-In-Your-Workspace.jpg"

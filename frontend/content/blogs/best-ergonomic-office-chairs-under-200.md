@@ -14,7 +14,8 @@ A lot of people spend tremendous hours daily sitting across their desks, this ha
 
 Read through this piece to understand what you need to build a healthy office space convenient enough for you to perform your day-to-day text acts operations without costing a fortune.
 
- ![image description](/blogs-img/Ergonomic-Chair-In-Your-Workspace.jpg)
+ok
+ ![image description](blogs-img/Ergonomic-Chair-In-Your-Workspace.jpg)
 
   <NuxtImg
               src="/blogs-img/Ergonomic-Chair-In-Your-Workspace.jpg"
@@ -24,7 +25,7 @@ Read through this piece to understand what you need to build a healthy office sp
               class="rounded-md"
             />
 
-
+ok
 ### test
 
 

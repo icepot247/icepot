@@ -14,7 +14,6 @@ A lot of people spend tremendous hours daily sitting across their desks, this ha
 
 Read through this piece to understand what you need to build a healthy office space convenient enough for you to perform your day-to-day text acts operations without costing a fortune.
 
-
 ### What You Must Consider While Shopping for An Ergonomic Office Chair
 
 One of the things you must consider when looking for an ergonomic office chair is the seat height, width, and depth you need to understand how to get the seats to fit the proper height that best makes you comfortable. As well, if the chair width is too wide, you won’t be able to fit between the armrest comfortably. You must understand that not getting the proper support for your arms, neck, shoulder, and head could lead to serious body complications. Lastly, you should ensure the depth of the chair fits you and the length of your legs, it should be something that must be adjustable.

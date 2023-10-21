@@ -35,6 +35,12 @@ function onClick(val: string) {
             Categories
           </NuxtLink>
         </li>
+        <li>
+          <NuxtLink to="/categories/TECH GEAR" :class="{ underline: path === 'categories' }">
+            TECH GEAR
+          </NuxtLink>
+        </li>
+         
 <!--        <li title="About Me" :class="{ underline: path === 'about' }">
           <NuxtLink to="/about" aria-label="About me">
             About

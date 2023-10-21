@@ -39,6 +39,7 @@ Choosing ergonomically-designed office furniture can significantly impact employ
 
 An ergonomic office chair is built to accommodate all kinds of bodies and physiques, you can adjust the seat armrest and lumbar support to make sure your neck, shoulders, and knees are in proper fit economic office chairs at the best alternative when it comes to comfortability while sitting in an office space.
 
+
 ### How Much Does an Ergonomic Office Chair Cost?
 On average, high-end ergonomic office chairs can cost anywhere from $200 to $2000. There are ergonomic chairs you can buy as low as $30 – those are sold at discount stores but they might not offer the same health benefits the expensive and high-end models will provide. Luxury brand models can go way above $2000 but you are paying mostly for the brand and marketing, not because ergonomic qualities are much better.
 

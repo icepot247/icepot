@@ -2,20 +2,11 @@
 import { makeFirstCharUpper } from '@/utils/helper'
 
 const topics = [
-  'javascript',
-  'typescript',
-  'git',
-  'docker',
-  'kubernetes',
-  'vue',
-  'nuxt',
-  'pinia',
-  'vuex',
-  'firebase',
-  'supabse',
-  'cypress',
-  'vercel',
-  'namecheap',
+  'TECH GEAR',
+  'Juicer',
+  'Coffee Maker',
+  'Best Blender',
+  'Kitchen Essential'
 ]
 
 useHead({

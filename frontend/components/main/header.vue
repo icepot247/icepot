@@ -14,7 +14,7 @@ function onClick(val: string) {
     <div class="flex px-6 container max-w-5xl justify-between mx-auto items-baseline ">
       <ul class="flex items-baseline space-x-5">
         <li class="text-base sm:text-2xl font-bold">
-          <NuxtLink to="/" :class="{ underline: path === '' }" style="text-direction: none">
+          <NuxtLink to="/" :class="{ underline: path === '' }" style="text-decoration: none;">
             I C E P O T
           </NuxtLink>
         </li>

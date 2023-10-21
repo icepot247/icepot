@@ -5,7 +5,7 @@ description: Best Ergonomic Office Chairs.
 image: /blogs-img/Best-Ergonomic-Office-Chairs.jpg
 alt: Best Ergonomic Office Chairs
 ogImage: /blogs-img/Best-Ergonomic-Office-Chairs.jpg
-tags: ['chair', 'Workspace']
+tags: ['chair', 'workspace']
 published: false
 ---
 

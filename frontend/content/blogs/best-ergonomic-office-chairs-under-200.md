@@ -14,9 +14,15 @@ A lot of people spend tremendous hours daily sitting across their desks, this ha
 
 Read through this piece to understand what you need to build a healthy office space convenient enough for you to perform your day-to-day text acts operations without costing a fortune.
 
-https://user-images.githubusercontent.com/5617868/194554107-2bd89c77-2faf-4048-8c21-002b4b704611.mp4
-
-[![Watch the video](https://img.youtube.com/vi/nTQUwghvy5Q/default.jpg)](https://youtu.be/nTQUwghvy5Q)
+<iframe
+    width="640"
+    height="480"
+    src="https://www.youtube.com/embed/UmX4kyB2wfg"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
 
 ### What You Must Consider While Shopping for An Ergonomic Office Chair
 

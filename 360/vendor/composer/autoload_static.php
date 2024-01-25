@@ -57,6 +57,7 @@ class ComposerStaticInit65f31526175b9fc9733d82d2bb4caba0
     );
 
     public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Mobile_Detect' => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/Mobile_Detect.php',
     );
 

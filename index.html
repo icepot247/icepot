@@ -90,7 +90,7 @@
         <div class="justify-content-center row text-center">
             <div class="col-lg-12">
                 <div class="candidate-list-widgets mb-4">
-<!--                     <h3>ADDCOMBO OFFER LIST</h3>-->
+                    <!--                     <h3>ADDCOMBO OFFER LIST</h3>-->
                 </div>
             </div>
         </div>
@@ -178,11 +178,11 @@
 
     $.ajax({
         url: "https://api.github.com/repos/icepot247/icepot/git/trees/build-site",
-            success: function(result){
+        success: function(result){
             console.log(result)
             $("#data-content").html(result);
         }
-        });
+    });
 
 </script>
 </body>

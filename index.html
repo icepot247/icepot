@@ -179,6 +179,7 @@
     $.ajax({
         url: "https://api.github.com/repos/icepot247/icepot/git/trees/build-site",
             success: function(result){
+            console.log(result)
             $("#data-content").html(result);
         }
         });

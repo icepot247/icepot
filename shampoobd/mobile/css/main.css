@@ -1,0 +1,1122 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+    border-bottom: 20px solid #e44d26;
+}
+
+.footer-container,
+.main aside {
+    border-top: 20px solid #e44d26;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #f16529;
+}
+
+.title {
+    color: white;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #e44d26;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+ul li {
+    list-style-type: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 300;
+}
+
+.dib {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.all_content {
+    background: url("../img/bg1.png")no-repeat center top, rgb(32,2,0); /* Old browsers */
+    background: url("../img/bg1.png")no-repeat center top, -moz-linear-gradient(top,  rgba(32,2,0,1) 0%, rgba(120,0,19,1) 100%); /* FF3.6-15 */
+    background: url("../img/bg1.png")no-repeat center top ,-webkit-linear-gradient(top,  rgba(32,2,0,1) 0%,rgba(120,0,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: url("../img/bg1.png")no-repeat center top, linear-gradient(to bottom,  rgba(32,2,0,1) 0%,rgba(120,0,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#200200', endColorstr='#780013',GradientType=0 ); /* IE6-9 */
+}
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+section {
+    max-width: 800px;
+    min-width: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 54px;
+    line-height: 1;
+    font-weight: bold;
+    color: #f18117;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+h1 span {
+    display: block;
+    font-size: 40px;
+}
+
+.block1 {
+    padding: 20px 0;
+}
+
+.block1 .dib {
+    width: 44%;
+}
+
+.block1 .two {
+    width: 54%;
+    margin-top: -20px;
+}
+
+.block1 .prod {
+    display: block;
+    width: 100%;
+    max-width: 105px;
+    margin: 0 auto;
+}
+
+.block1 .block_name {
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    padding: 35px 5px 15px;
+    border-radius: 5px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100 */
+    background: rgb(0,0,0); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+}
+
+.block1 .block_name span {
+    position: relative;
+    display: block;
+    font-size: 17px;
+    font-weight: 300;
+    color: #f6931c;
+    margin-top: 20px;
+}
+
+.block1 .block_name span:before {
+    content: '. . .';
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    top: -37px;
+    left: 37%;
+}
+
+.block1 .block_price {
+    margin-top: 10px;
+}
+
+.block1 .old_price {
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #fff;
+}
+
+.block1 .old_price span {
+    display: block;
+    text-decoration: line-through;
+}
+
+.block1 .new_price {
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+    color: #f6931c;
+}
+
+.btn {
+    display: block;
+    width: 230px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin: 20px auto 10px;
+    border-radius: 25px;
+    border: 3px solid white;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    background: -moz-linear-gradient(90deg, rgba(254,86,0,1) 0%, rgba(254,86,0,1) 49%, rgba(226,70,6,1) 50%, rgba(226,70,6,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(226,70,6,1)), color-stop(50%, rgba(226,70,6,1)), color-stop(51%, rgba(254,86,0,1)), color-stop(100%, rgba(254,86,0,1)));
+    background: -webkit-linear-gradient(90deg, rgba(254,86,0,1) 0%, rgba(254,86,0,1) 49%, rgba(226,70,6,1) 50%, rgba(226,70,6,1) 100%);
+    background: -o-linear-gradient(90deg, rgba(254,86,0,1) 0%, rgba(254,86,0,1) 49%, rgba(226,70,6,1) 50%, rgba(226,70,6,1) 100%);
+    background: -ms-linear-gradient(90deg, rgba(254,86,0,1) 0%, rgba(254,86,0,1) 49%, rgba(226,70,6,1) 50%, rgba(226,70,6,1) 100%);
+    background: linear-gradient(0deg, rgba(254,86,0,1) 0%, rgba(254,86,0,1) 49%, rgba(226,70,6,1) 50%, rgba(226,70,6,1) 100%);
+    box-shadow: 0px 5px 10px 1px rgb(201, 30, 1);
+}
+
+.block2 {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-radius: 10px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f4d6ba+0,d0a98f+100 */
+    background: rgb(244,214,186); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(244,214,186,1) 0%, rgba(208,169,143,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(244,214,186,1) 0%,rgba(208,169,143,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(244,214,186,1) 0%,rgba(208,169,143,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4d6ba', endColorstr='#d0a98f',GradientType=0 ); /* IE6-9 */
+
+}
+
+.block2 h2 {
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #130406;
+    margin: 0 0 10px;
+}
+
+.block2 h2 span {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #e34506;
+}
+
+.block2 ul {
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.block2 ul li {
+    position: relative;
+    min-height: 45px;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #130406;
+    padding: 10px 0 0 60px;
+    margin: 5px 0;
+}
+
+.block2 ul li:before {
+    content: '';
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    margin: -8px 0 0 -60px;
+    background: url("../img/sprite.png")no-repeat 0 0;
+}
+
+.block2 ul li:nth-child(2):before {
+    background-position: 0 -53px;
+}
+
+.block2 ul li:nth-child(3):before {
+    background-position: 0 -108px;
+}
+
+.block3 {
+    padding: 20px 0;
+}
+
+.block3 h3 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: normal;
+    color: #fff;
+    margin: 0;
+}
+
+.block3 h2 {
+    position: relative;
+    z-index: 2;
+    font-size: 64px;
+    line-height: 1;
+    font-weight: normal;
+    color: #f18117;
+    margin: 0 0 20px;
+}
+
+.block3 h2 span {
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.block3 h4 {
+    font-size: 18px;
+    line-height: 1.1;
+    font-weight: normal;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.block3 .ing {
+    width: 49%;
+    margin: 5px 0;
+}
+
+
+
+.block3 .ing img {
+    display: block;
+    width: 115px;
+    height: 134px;
+    margin: 5px auto;
+}
+
+.block3 .ing h3 {
+    min-height: 35px;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #fff;
+    margin: 5px 0;
+    padding: 0 5px;
+}
+
+.block3 .ing ul {
+    margin: 0;
+    padding: 0;
+}
+
+.block3 .ing ul li {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #fff;
+    padding-left: 20px;
+}
+
+.block3 .ing ul li:before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: 0;
+    background: url("../img/gal.png")no-repeat center;
+}
+
+.block4 {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px 0 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f4d6ba+0,d0a98f+100 */
+    background: rgb(244,214,186); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(244,214,186,1) 0%, rgba(208,169,143,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(244,214,186,1) 0%,rgba(208,169,143,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(244,214,186,1) 0%,rgba(208,169,143,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4d6ba', endColorstr='#d0a98f',GradientType=0 ); /* IE6-9 */
+
+}
+
+.block4 .text {
+    position: relative;
+    z-index: 2;
+    padding-left: 70px;
+}
+
+.block4 .girl {
+    position: absolute;
+    width: 80%;
+    z-index: 1;
+    margin-left: -190px;
+    top: -20px;
+    left: 0;
+}
+
+.block4 .text h3 {
+    font-size: 22px;
+    line-height: 1;
+    color: #130306;
+    margin: 0;
+}
+
+.block4 .text h3 span {
+    color: #e34506;
+}
+
+.block4 .text h4 {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    margin: 0;
+}
+
+.block5 .slider {
+    margin-top: 20px;
+}
+
+.block5 .slider ul {
+    margin: 0;
+    padding: 0;
+}
+
+.block5 .slider ul li {
+    margin: 0;
+    padding: 0 0 30px;
+}
+
+.block5 .slider ul li h3 {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 5px 0 25px;
+    padding: 0 50px;
+}
+
+.block5 .slider ul li .block_img {
+    position: relative;
+    width: 200px;
+    margin: 0 auto 10px;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.block5 .slider ul li .block_img .before {
+    position: absolute;
+    width: 92px;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: rgba(196, 62, 29, 0.7);
+    border-bottom-left-radius: 18px;
+    bottom: 0;
+    left: 0;
+    padding: 4px 3px;
+}
+
+.block5 .slider ul li .block_img .after {
+    position: absolute;
+    width: 92px;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: rgba(63, 189, 136, 0.7);
+    border-bottom-right-radius: 18px;
+    bottom: 0;
+    right: 0;
+    padding: 4px 3px;
+}
+
+.block5 .slider ul li .block_img img {
+    border-radius: 20px;
+}
+
+.block5 .slider ul li .block_img .proc {
+    position: absolute;
+    padding: 5px 10px;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    top: -18px;
+    left: 30%;
+    background: #ec7413;
+    border-radius: 20px;
+}
+
+.block5 .slider ul li .block_info {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.block5 .slider ul li .block_info p {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 0 10px 0 30px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.block5 .slider ul li .block_info p:before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: 10px;
+    background: url("../img/gal.png")no-repeat center;
+}
+
+.block6 h3 {
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 20px 0 15px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.block6 h3 span {
+    color: #ec7413;
+}
+
+.block6 h3 b {
+    text-transform: uppercase;
+}
+
+.block6 .block_doc {
+    width: 140px;
+    float: left;
+    margin: 0 5px 5px 0;
+}
+
+.block6 .block_doc img {
+    width: 100%;
+}
+
+.block6 p {
+    font-size: 16px;
+    line-height: 1.2;
+    color: #fff;
+    text-align: justify;
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+.block7 {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f4d6ba+0,d0a98f+100 */
+    background: rgb(244,214,186); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(244,214,186,1) 0%, rgba(208,169,143,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(244,214,186,1) 0%,rgba(208,169,143,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(244,214,186,1) 0%,rgba(208,169,143,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4d6ba', endColorstr='#d0a98f',GradientType=0 ); /* IE6-9 */
+
+}
+
+.block7 .text {
+    position: relative;
+    z-index: 2;
+}
+
+.block7 h3 {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #130306;
+    font-weight: normal;
+    margin: 0 0 15px;
+}
+
+.block7 h3 span {
+    color: #e34506;
+}
+
+.block7 .text p {
+    font-size: 14px;
+    line-height: 1;
+    color: #000;
+    margin: 0 0 10px;
+    padding: 0 50px 0 0;
+}
+
+.block7 .text ul {
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+
+.block7 .text ul li {
+    font-size: 16px;
+    line-height: 1.1;
+    font-weight: normal;
+    margin: 10px 0;
+    color: #130306;
+    list-style-type: disc;
+}
+
+.block8 {
+    padding: 20px 0;
+}
+
+.block8 .block_prod {
+    position: relative;
+    z-index: 2;
+    width: 47%;
+    margin: 25px -8px 0 0;
+}
+
+.block8 .block_prod img {
+    width: 100%;
+}
+
+.block8 .block_price {
+    width: 53%;
+}
+
+.block8 .block_price .price {
+    margin: 0 0 15px;
+}
+
+.block8 .block_price .price .new_price {
+    font-size: 30px;
+    line-height: 1;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 5px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5911c+0,e14d08+100 */
+    background: rgb(245,145,28); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(245,145,28,1) 0%, rgba(225,77,8,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(245,145,28,1) 0%,rgba(225,77,8,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(245,145,28,1) 0%,rgba(225,77,8,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5911c', endColorstr='#e14d08',GradientType=0 ); /* IE6-9 */
+
+}
+
+.block8 .block_price .price .old_price {
+    font-size: 14px;
+    line-height: 1.1;
+    text-align: center;
+    color: #fff;
+    padding: 0 5px;
+    margin: 5px 0 15px;
+    text-decoration: line-through;
+}
+
+.block8 .block_price .price ul {
+    padding: 0 0 0 25px;
+    margin: 0;
+}
+
+.block8 .block_price .price ul li {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    margin: 10px 0;
+    color: #fff;
+    list-style-type: disc;
+}
+
+.block9 {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 0 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4b0711+0,2f0e13+100 */
+    background: url("../img/girl_footer.png")no-repeat left top rgb(75,7,17); /* Old browsers */
+    background: url("../img/girl_footer.png")no-repeat left top, -moz-radial-gradient(center, ellipse cover,  rgba(75,7,17,1) 0%, rgba(47,14,19,1) 100%); /* FF3.6-15 */
+    background: url("../img/girl_footer.png")no-repeat left top, -webkit-radial-gradient(center, ellipse cover,  rgba(75,7,17,1) 0%,rgba(47,14,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: url("../img/girl_footer.png")no-repeat left top, radial-gradient(ellipse at center,  rgba(75,7,17,1) 0%,rgba(47,14,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b0711', endColorstr='#2f0e13',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.block9 .plashka {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: rgb(245,145,28); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(245,145,28,1) 0%, rgba(225,77,8,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(245,145,28,1) 0%,rgba(225,77,8,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(245,145,28,1) 0%,rgba(225,77,8,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5911c', endColorstr='#e14d08',GradientType=0 ); /* IE6-9 */
+}
+
+.block9 .plashka h4 {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 10px 10px;
+}
+
+.block9 h2 {
+    font-size: 32px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #fff;
+    margin: 10px 0 5px;
+}
+
+.block9 h3 {
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    font-weight: normal;
+    color: #f18117;
+    margin: 10px 0 5px;
+}
+
+.block9 h3 span {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+form {
+    margin-top: 35px;
+}
+
+select, input {
+    display: block;
+    width: 100%;
+    height: 32px;
+    line-height: 40px;
+    padding: 0 20px 0 30px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: #300e13;
+    text-transform: uppercase;
+    margin: 10px auto 5px;
+    background: #fff;
+}
+
+select {
+    line-height: 0.9;
+    color: #300e13;
+    background: url("../img/br_black.png") no-repeat 95% 50%,
+    url("../img/sprite_two.png") no-repeat 3% 6px, #fff;
+    padding-right: 0;
+}
+
+.block9 .name {
+    background: #fff url("../img/sprite_two.png") no-repeat 3% -36px;
+}
+
+.block9 .phone {
+    background: #fff url("../img/sprite_two.png") no-repeat 3% -78px;
+}
+
+::-webkit-input-placeholder {color:#300e13;}
+::-moz-placeholder          {color:#300e13;}
+:-moz-placeholder           {color:#300e13;}
+:-ms-input-placeholder      {color:#300e13;}
+
+.shipment_price, .total_price {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.shipment_price {
+    font-size: 14px;
+    color: #fff;
+    margin: 10px 0 0 0px;
+}
+
+.total_price {
+    font-size: 20px;
+    color: #ffdd22;
+}
+
+.block10 {
+    padding: 0 0 20px;
+}
+
+.block10 p {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #fff;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

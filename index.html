@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
-
-    <title>candidate list with skills rating and location - Bootdey.com</title>
+    <title>Offer Links</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
@@ -101,73 +99,23 @@
                 <div class="candidate-list">
                     <div class="candidate-list-box card mt-4">
                         <div class="p-4 card-body">
-                            <div class="align-items-center row">
-                                <div class="col-auto">
-                                    <div class="candidate-list-images">
-                                        <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt
-                                                         class="avatar-md img-thumbnail rounded-circle"/></a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5">
-                                    <div class="candidate-list-content mt-3 mt-lg-0">
-                                        <h5 class="fs-19 mb-0">
-                                            <a class="primary-link" href="#">Charles Dickens</a><span
-                                                class="badge bg-success ms-1"><i class="mdi mdi-star align-middle"></i>4.8</span>
-                                        </h5>
-                                        <p class="text-muted mb-2">Project Manager</p>
-                                        <ul class="list-inline mb-0 text-muted">
-                                            <li class="list-inline-item"><i class="mdi mdi-map-marker"></i> Oakridge
-                                                Lane Richardson
-                                            </li>
-                                            <li class="list-inline-item"><i class="mdi mdi-wallet"></i> $650 / hours
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4">
-                                    <div class="mt-2 mt-lg-0 d-flex flex-wrap align-items-start gap-1">
-                                        <span class="badge bg-soft-secondary fs-14 mt-1">Leader</span><span
-                                            class="badge bg-soft-secondary fs-14 mt-1">Manager</span><span
-                                            class="badge bg-soft-secondary fs-14 mt-1">Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="favorite-icon">
-                                <a href="#"><i class="mdi mdi-heart fs-18"></i></a>
-                            </div>
+                            <table class="table"  id="myTable">
+                                <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Offer Links</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <!--<tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                </tr>-->
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="row ">
-            <div class="col-lg-12">
-                <div id="data-content">
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="row">
-            <div class="mt-4 pt-2 col-lg-12">
-                <nav aria-label="Page navigation example">
-                    <div class="pagination job-pagination mb-0 justify-content-center">
-                        <li class="page-item disabled">
-                            <a class="page-link" tabindex="-1" href="#"><i
-                                    class="mdi mdi-chevron-double-left fs-15"></i></a>
-                        </li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#"><i class="mdi mdi-chevron-double-right fs-15"></i></a>
-                        </li>
-                    </div>
-                </nav>
             </div>
         </div>
     </div>
@@ -179,8 +127,32 @@
     $.ajax({
         url: "https://api.github.com/repos/icepot247/icepot/git/trees/build-site",
         success: function(result){
-            console.log(result)
-            $("#data-content").html(result);
+            // console.log(result.tree)
+            $.each(result.tree, function(key,val) {
+
+                var baseUrl = 'https://icepot.xyz/'
+                var ignoreArray = ['.gitignore', '.idea', 'CNAME']
+                if($.inArray(val.path, ignoreArray) == -1) {
+                    console.log(baseUrl+val.path);
+                    var i = key+1;
+                    var tr = '<tr>\n' +
+                                '<th scope="row">'+i+'</th>\n' +
+                                '<td><a href="'+baseUrl+val.path+'" target="_blank">'+baseUrl+val.path+'</a></td>\n' +
+                             '</tr>';
+                    $('#myTable tr:last').after(tr);
+                }
+
+            });
+
+            /*var baseUrl = 'https://icepot.xyz/';
+            var url=baseUrl+"ampoulecreambd";
+            $.get(url).then(function(data){
+
+                $("#data-content").html(data);
+                alert(data);
+            });
+*/
+
         }
     });
 

@@ -102,7 +102,7 @@
                             <table class="table"  id="myTable">
                                 <thead>
                                 <tr>
-                                    <th scope="col" width="3">#</th>
+<!--                                    <th scope="col" width="3">#</th>-->
                                     <th scope="col">Offer Links</th>
                                 </tr>
                                 </thead>
@@ -133,7 +133,7 @@
                 if($.inArray(val.path, ignoreArray) == -1) {
                     var i = key-2;
                     var tr = '<tr>\n' +
-                                '<th scope="row">'+i+'.</th>\n' +
+                                // '<th scope="row">'+i+'.</th>\n' +
                                 '<td><a href="'+baseUrl+val.path+'" target="_blank">'+baseUrl+val.path+'</a></td>\n' +
                              '</tr>';
                     $('#myTable tr:last').after(tr);

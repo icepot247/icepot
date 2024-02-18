@@ -102,7 +102,7 @@
                             <table class="table"  id="myTable">
                                 <thead>
                                 <tr>
-                                    <th scope="col">#</th>
+                                    <th scope="col" width="3">#</th>
                                     <th scope="col">Offer Links</th>
                                 </tr>
                                 </thead>
@@ -129,30 +129,19 @@
         success: function(result){
             // console.log(result.tree)
             $.each(result.tree, function(key,val) {
-
                 var baseUrl = 'https://icepot.xyz/'
                 var ignoreArray = ['.gitignore', '.idea', 'CNAME', 'index.html']
                 if($.inArray(val.path, ignoreArray) == -1) {
                     console.log(baseUrl+val.path);
                     var i = key+1;
                     var tr = '<tr>\n' +
-                                '<th scope="row">'+i+'</th>\n' +
+                                '<th scope="row">'+i+'.</th>\n' +
                                 '<td><a href="'+baseUrl+val.path+'" target="_blank">'+baseUrl+val.path+'</a></td>\n' +
                              '</tr>';
                     $('#myTable tr:last').after(tr);
                 }
 
             });
-
-            /*var baseUrl = 'https://icepot.xyz/';
-            var url=baseUrl+"ampoulecreambd";
-            $.get(url).then(function(data){
-
-                $("#data-content").html(data);
-                alert(data);
-            });
-*/
-
         }
     });
 

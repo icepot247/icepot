@@ -131,7 +131,7 @@
             $.each(result.tree, function(key,val) {
 
                 var baseUrl = 'https://icepot.xyz/'
-                var ignoreArray = ['.gitignore', '.idea', 'CNAME']
+                var ignoreArray = ['.gitignore', '.idea', 'CNAME', 'index.html']
                 if($.inArray(val.path, ignoreArray) == -1) {
                     console.log(baseUrl+val.path);
                     var i = key+1;

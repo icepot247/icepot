@@ -8,9 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
-        .displaynone{
+        .displaynone {
             display: none;
         }
+
         body {
             padding-top: 40px;
             background: #E6E6FA
@@ -150,7 +151,6 @@
         </div>
 
 
-
         <div class="row">
             <div class="mt-4 pt-2 col-lg-12">
                 <nav aria-label="Page navigation example">
@@ -178,7 +178,7 @@
 
     $.ajax({
         url: "https://api.github.com/repos/icepot247/icepot/git/trees/build-site",
-        success: function(result){
+        success: function (result) {
             console.log(result)
             $("#data-content").html(result);
         }

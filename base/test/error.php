@@ -228,9 +228,7 @@
             }
         }
     </style>
-    <script type="text/javascript" src="//precteri.com/content/shared/js/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="//precteri.com/content/shared/js/successpage.js"></script>
-    <script type="text/javascript" src="//precteri.com/content/shared/js/sp_submit.default.js"></script>
+    <script type="text/javascript" src="//precteri.com/content/shared/js/jquery-1.12.4.min.js"></script> 
 </head>
 <body>
 

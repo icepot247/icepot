@@ -1,0 +1,14 @@
+ <svg xmlns="http://www.w3.org/2000/svg" width="260.062" height="301" viewBox="0 0 260.062 301">
+                            <defs>
+                                <style>
+                                    .cls-3 {
+                                        fill: #6287ad;
+                                        fill-rule: evenodd;
+                                        opacity: 0.23;
+                                    }
+                                </style>
+                            </defs>
+                            <path id="substrate" class="cls-3"
+                                d="M623.017,6610.75L493,6685.99l-130.017-75.24v-150.5L493,6385l130.016,75.25v150.5Z"
+                                transform="translate(-362.969 -6385)" />
+                        </svg>

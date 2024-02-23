@@ -1,0 +1,134 @@
+@media(min-width:600px) {
+
+    .sec2__triangle,
+    .age__triangle {
+        height: 175px;
+    }
+
+    .age__triangle {
+        bottom: -75px;
+    }
+
+    .result__triangle {
+        height: 175px;
+    }
+
+    .how__triangle {
+        height: 250px;
+    }
+}
+
+@media(min-width:700px) {
+    .sec2__decor1 {
+        content: "";
+        background: url(../img/sec2__decor1.png) no-repeat;
+        width: 365px;
+        height: 1078px;
+        top: 85px;
+        left: -170px;
+    }
+
+    .sec2__decor2 {
+        content: "";
+        background: url(../img/sec2__decor2.png) no-repeat;
+        width: 361px;
+        height: 939px;
+        bottom: -550px;
+        right: -180px;
+        z-index: 3;
+        pointer-events: none;
+    }
+
+    .doc__decor1 {
+        top: 0;
+        left: -130px;
+        background: url(../img/doc__decor1.png) no-repeat;
+        width: 535px;
+        height: 721px;
+    }
+
+    .doc__decor2 {
+        background: url(../img/doc__decor2.png) no-repeat;
+        right: -130px;
+        bottom: 0;
+        width: 426px;
+        height: 842px;
+    }
+}
+
+@media(min-width:900px) {
+    .sec2__decor1 {
+        left: -100px;
+    }
+
+    .sec2__decor2 {
+        right: -100px;
+    }
+
+    .sec5__decor1 {
+        top: 0;
+        left: 0;
+        background: url(../img/sec5__decor1.png) no-repeat;
+        width: 343px;
+        height: 476px;
+    }
+
+    .sec5__decor2 {
+        right: 0;
+        bottom: 0;
+        background: url(../img/sec5__decor2.png) no-repeat;
+        width: 269px;
+        height: 573px;
+    }
+}
+
+
+
+@media(min-width:992px) {
+
+
+    .how__decor1 {
+        top: 0;
+        left: 0;
+        background: url(../img/how__decor1.png) no-repeat;
+        width: 395px;
+        height: 572px;
+    }
+
+    .how__decor2 {
+        right: 0;
+        background: url(../img/how__decor2.png) no-repeat;
+        bottom: -70px;
+        width: 456px;
+        height: 674px;
+    }
+}
+
+@media(min-width:600px) {
+    .order__decor1 {
+        top: 0;
+        left: -230px;
+        background: url(../img/sec2__decor1.png) no-repeat;
+        width: 365px;
+        height: 1078px;
+    }
+
+    .order__decor2 {
+        bottom: -300px;
+        right: -210px;
+        background: url(../img/sec2__decor2.png) no-repeat;
+        width: 361px;
+        height: 939px;
+        z-index: 3;
+    }
+}
+
+@media(min-width:800px) {
+    .order__decor1 {
+        left: -130px;
+    }
+
+    .order__decor2 {
+        right: -130px;
+    }
+}
